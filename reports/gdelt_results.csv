@@ -1,0 +1,5 @@
+Topic,Keywords,Matches,Status
+Topic 0,"['trump', 'election', 'president']",5,VERIFIED
+Topic 1,"['health', 'covid', 'hospital']",0,NOT FOUND
+Topic 2,"['climate', 'environment', 'carbon']",0,NOT FOUND
+Topic 3,"['economy', 'market', 'business']",0,NOT FOUND
