@@ -100,9 +100,9 @@ pip install matplotlib seaborn gensim nltk
 
 # Step 2 - Run notebooks in order
 1. notebooks/clean.ipynb
-2. notebooks/descriptive_analysis.ipynb
-3. notebooks/eda_plan.ipynb
-4. notebooks/predictive_analysis.ipynb
+2. notebooks/eda_plan.ipynb
+3. notebooks/LDA.ipynb
+4. notebooks/BERTopic.ipynb
 ```
 
 ---
