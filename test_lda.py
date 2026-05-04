@@ -18,7 +18,7 @@ lda.fit(dtm)
 for i, topic in enumerate(lda.components_[:10]):
     top_words = [vocab[j] for j in topic.argsort()[-8:][::-1]]
     print(f"Topic {i}: {', '.join(top_words)}")
-!pip install gensim -q
+
 from gensim.models.coherencemodel import CoherenceModel
 from gensim.corpora import Dictionary
 

@@ -110,6 +110,9 @@ project22/
 ## How to Run
 
 ```bash
+"/Users/pintusingh/Desktop/Dynamic Trend & Event Detector"
+source venv/bin/activate
+streamlit run app.py
 # Step 1 - Install libraries
 pip install pandas numpy scikit-learn matplotlib seaborn
 pip install bertopic sentence-transformers umap-learn hdbscan gensim
