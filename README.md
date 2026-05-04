@@ -2,23 +2,24 @@
 
 ## Emerging Topic Detection & News Correlation
 
-**Course:** Deep Learning & Advanced Machine Learning 
+**Course:** Deep Learning & Advanced Machine Learning
+
 ## Project
 
 Dynamic Trend & Event Detector
 
 ## Authors
 
-Pintu Singh (230105)
-Fathal (230043)
+* Pintu Singh (230105)
+* Fathal (230043)
 
 ---
 
 ## Project Overview
 
-This project detects emerging topics from large-scale news articles and analyzes whether a trend corresponds to a real-world event or a short-lived viral topic.
+This project focuses on detecting emerging topics from large-scale news articles and analyzing whether a trend corresponds to a real-world event or a short-lived viral topic.
 
-The system uses topic modeling, semantic embeddings, and temporal analysis to track how discussions evolve over time. We compare traditional topic modeling (LDA), deep learning-based topic modeling (BERTopic), and a hybrid approach using semantic velocity and external news correlation.
+The system uses topic modeling, semantic embeddings, and temporal analysis to track how discussions evolve over time. We compare traditional topic modeling (LDA), deep learning-based topic modeling (BERTopic), and a hybrid approach that incorporates semantic velocity and external news correlation.
 
 The goal is to automatically identify meaningful events from noisy information streams and distinguish real-world events from temporary trends.
 
@@ -26,11 +27,11 @@ The goal is to automatically identify meaningful events from noisy information s
 
 ## Problem Statement
 
-Massive volumes of news articles are generated every day, making it difficult to identify important events. Many trends appear suddenly and disappear quickly, while others represent real-world events such as elections, pandemics, or policy changes.
+Massive volumes of news articles are generated every day, making it difficult to identify significant events. Many trends appear suddenly and disappear quickly, while others represent real-world events such as elections, pandemics, or policy changes.
 
-Traditional topic modeling approaches fail to capture temporal dynamics and semantic evolution of topics. They also cannot differentiate between meaningful events and short-lived viral trends.
+Traditional topic modeling approaches fail to capture temporal dynamics and semantic evolution. They also struggle to differentiate between meaningful events and short-lived viral trends.
 
-Therefore, we propose a Dynamic Trend & Event Detector that:
+To address this, we propose a **Dynamic Trend & Event Detector** that:
 
 * Detects emerging topics automatically
 * Measures semantic velocity of topics
@@ -44,9 +45,9 @@ Therefore, we propose a Dynamic Trend & Event Detector that:
 
 The system follows a hybrid pipeline:
 
-1. Data collection from news dataset
+1. Data collection from news datasets
 2. Data cleaning and preprocessing
-3. Exploratory data analysis (EDA)
+3. Exploratory Data Analysis (EDA)
 4. Topic modeling using LDA (baseline)
 5. Deep topic modeling using BERTopic
 6. Temporal topic tracking
@@ -58,13 +59,13 @@ The system follows a hybrid pipeline:
 
 ## Results
 
-| Model        | Type          | Coherence Score | Temporal | GDELT |
-| ------------ | ------------- | --------------- | -------- | ----- |
-| A — LDA      | Advanced ML   | 0.3573          | No       | No    |
-| B — BERTopic | Deep Learning | 0.4781          | No       | No    |
-| C — Hybrid   | Hybrid        | 0.4981          | Yes      | Yes   |
+| Model        | Type            | Coherence Score | Temporal | GDELT |
+| ------------ | --------------- | --------------- | -------- | ----- |
+| A — LDA      | Advanced ML     | 0.3573          | No       | No    |
+| B — BERTopic | Deep Learning   | 0.4781          | No       | No    |
+| C — Hybrid   | Hybrid Approach | 0.4981          | Yes      | Yes   |
 
-Hybrid system improved **39.4%** over LDA baseline.
+The hybrid system shows an improvement of **39.4%** over the LDA baseline.
 
 ---
 
@@ -100,13 +101,13 @@ project22/
 
 ## Dataset
 
-Source: Kaggle — News Category Dataset
-Link: https://www.kaggle.com/datasets/rmisra/news-category-dataset
-Size: 209,527 articles (2012–2022)
+* **Source:** Kaggle — News Category Dataset
+* **Link:** https://www.kaggle.com/datasets/rmisra/news-category-dataset
+* **Size:** 209,527 articles (2012–2022)
 
 ---
 
-## How To Run
+## How to Run
 
 ```bash
 # Step 1 - Install libraries
@@ -126,14 +127,14 @@ pip install bertopic sentence-transformers umap-learn hdbscan gensim
 
 ## Tech Stack
 
-| Tool          | Purpose                    |
-| ------------- | -------------------------- |
-| LDA (sklearn) | Advanced ML baseline       |
-| SBERT         | Deep learning embeddings   |
-| UMAP          | Dimensionality reduction   |
-| HDBSCAN       | Density-based clustering   |
-| BERTopic      | Neural topic modeling      |
-| GDELT API     | External news verification |
+| Tool          | Purpose                     |
+| ------------- | --------------------------- |
+| LDA (sklearn) | Baseline topic modeling     |
+| SBERT         | Semantic embeddings         |
+| UMAP          | Dimensionality reduction    |
+| HDBSCAN       | Clustering                  |
+| BERTopic      | Neural topic modeling       |
+| GDELT API     | External event verification |
 
 ---
 
@@ -143,4 +144,4 @@ pip install bertopic sentence-transformers umap-learn hdbscan gensim
 2. Grootendorst (2022) — BERTopic
 3. Reimers & Gurevych (2019) — Sentence-BERT
 4. McInnes & Healy (2017) — HDBSCAN
-5. Misra (2022) — News Category Dataset, Kaggle
+5. Misra (2022) — News Category Dataset (Kaggle)
